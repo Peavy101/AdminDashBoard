@@ -21,7 +21,52 @@ main {
     height: 20%;
 }
 
-.dashboardBottom {
+.mainDashboard {
     flex: 1; /*chatgpt helped me out in figuring this flex thingy out */
+    display: flex;
+    flex-direction: row;
     background-color: lightgrey;
+}
+
+.projects {
+    flex-basis: 75%;
+    display: flex;
+    flex-direction: column;
+    background-color: lightgrey;
+}
+
+.dashboardGrid {
+    display: grid;
+    justify-content: center;
+    border: 1px solid black;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 30% 30% 30%;
+    height: 100%;
+    gap: 5%;
+    padding: 5%;
+}
+
+.dashboardGrid > div {
+    border: 1px solid blue;
+    width: 100%;
+}
+
+.sidebar {
+    border: 1px solid black;
+    flex-basis: 25%;
+    padding: 10px;
+}
+
+.announcementsBox {
+    background-color: white;
+    border-radius: 10px;
+    margin: 5px;
+    padding: 10px;
+}
+
+.trendingBox {
+    background-color: white;
+    border-radius: 10px;
+    margin: 5px;
+    padding: 10px;
 }
