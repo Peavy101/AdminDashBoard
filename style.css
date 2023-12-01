@@ -1,0 +1,27 @@
+body {
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+    padding: 0;
+}
+
+aside {
+    background-color: lightskyblue;
+    height: 100vh;
+    flex-basis: 20%;
+}
+
+main {
+    flex-basis: 80%;
+    display: flex;
+    flex-direction: column;
+}
+
+.dashboardTop {
+    height: 20%;
+}
+
+.dashboardBottom {
+    flex: 1; /*chatgpt helped me out in figuring this flex thingy out */
+    background-color: lightgrey;
+}
