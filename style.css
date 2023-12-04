@@ -47,7 +47,6 @@ aside {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    padding: 10px;
 }
 .searchLeft {
     display: flex;
@@ -65,23 +64,28 @@ aside {
 }
 
 .padding {
-    padding: 10px;
-}
-
-form {
-
+    padding: 20px;
 }
 
 .searchBottom {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+}
 
+.search-bar {
+    border-radius: 10px;
+    width: 600px;
+    height: 30px;
+    background-color: lightgrey;
+    border-color: transparent;
 }
 
 .searchBottomLeft {
     display: flex;
     flex-direction: row;
+    padding-left: 40px;
+    padding-bottom: 60px;
 }
 
 .topButtons {
@@ -103,7 +107,6 @@ form {
 }
 
 .mainDashboard {
-    flex: 1; /*chatgpt helped me out in figuring this flex thingy out */
     display: flex;
     flex-direction: row;
     background-color: lightgrey;
@@ -130,7 +133,6 @@ form {
     background-color: white;
     border-left: 8px solid orange;
     border-radius: 10px;
-    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
