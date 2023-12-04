@@ -5,15 +5,88 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Admin Dashboard</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 </head>
 
 <body>
     <aside>
-        <p><b>Dashboard</b></p>
+        <div class="dashboardTitle"><h1>Dashboard</h1></div>
+        <div class="asideMain">
+            <div class="dashboardNav">
+                <div><img src="pictures/home.png" alt="home"></div>
+                <div><p>Home</p></div>
+            </div>
+            <div class="dashboardNav">
+                <div><img src="pictures/card-account-details-outline.png" alt="profile"></div>
+                <div><p>Profile</p></div>
+            </div>
+            <div class="dashboardNav">
+                <div><img src="pictures/message-reply.png" alt="messages"></div>
+                <div><p>Messages</p></div>
+            </div>
+            <div class="dashboardNav">
+                <div><img src="pictures/clock-time-three-outline.png" alt="history"></div>
+                <div><p>History</p></div>
+            </div>
+            <div class="dashboardNav">
+                <div><img src="pictures/file-multiple-outline.png" alt="tasks"></div>
+                <div><p>Tasks</p></div>
+            </div>
+            <div class="dashboardNav">
+                <div><img src="pictures/account-group.png" alt="communites"></div>
+                <div><p>Communities</p></div>
+            </div>
+        </div>
+        <div class="asideMain">
+            <div class="dashboardNav">
+                <div><img src="pictures/cog.png" alt="settings"></div>
+                <div><p>Settings</p></div>
+            </div>
+            <div class="dashboardNav">
+                <div><img src="pictures/help-box.png" alt="support"></div>
+                <div>Support</div>
+            </div>
+            <div class="dashboardNav">
+                <div><img src="pictures/shield-check.png" alt="privacy"></div>
+                <div>Privacy</div>
+            </div>
+        </div>
     </aside>
     <main>
         <div class="dashboardTop">
-            <p>hello</p>
+            <div class="search">
+                <div class="searchLeft">
+                    <img src="pictures/magnify.png" alt="search" class="padding">
+                    <form id="form" class="padding"> 
+                        <input type="search" id="query" name="q" placeholder="Search...">
+                    </form>
+                </div>
+                <div class="searchRight">
+                    <img src="pictures/bell-ring-outline.png" alt="notifications" class="padding">
+                    <img src="pictures/girl.png" alt="girl" class="padding">
+                    <p class="padding">Morgan Oakley</p>
+                </div>
+            </div>
+            <div class="searchBottom">
+                <div class="searchBottomLeft">
+                    <img src="pictures/girl.png" alt="girl">
+                    <div>
+                        <p>Hi there,</p>
+                        <h2>Morgan Oakley (@morgan)</h2>
+                    </div>
+                </div>
+                <div class="topButtons">
+                    <div class="topButton">
+                        <p>New</p>
+                    </div>
+                    <div class="topButton">
+                        <p>Upload</p>
+                    </div>
+                    <div class="topButton">
+                        <p>Share</p>
+                    </div>
+                </div>
+            </div>
         </div>
         <div class="mainDashboard">
             <div class="projects">
@@ -21,27 +94,89 @@
                     <p>Your Projects</p>
                 </div>
                 <div class="dashboardGrid">
-                    <div class="item">hello</div>
-                    <div class="item">hello</div>
-                    <div class="item">hello</div>
-                    <div class="item">hello</div>
-                    <div class="item">hello</div>
-                    <div class="item">hello</div>
+                    <div class="item">
+                        <div class="itemText">
+                            <p><b>Super Cool Project</b></p>
+                            <p>Sed Tempus ut lacus ut scelerisque. Suspendisse sollicitudin nibh erat, id facilisis felis accumsan nec.</p>
+                        </div>
+                        <div class="itemPhoto">
+                            <img src="pictures/star-plus-outline.png" alt="star" class="room">
+                            <img src="pictures/eye-plus-outline.png" alt="eye" class="room">
+                            <img src="pictures/source-fork.png" alt="fork" class="room">
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="itemText">
+                            <p><b>Less Cool Project</b></p>
+                            <p>Nullam condimentum ipsum ut lectus vehicula consectetur. Quisque sed dolor tincidunt, consectetur sapien et, facilisis dolor. Duis sem purus, dignissim ut sapien in, varius pellentesque lacus.</p>
+                        </div>
+                        <div class="itemPhoto">
+                            <img src="pictures/star-plus-outline.png" alt="star" class="room">
+                            <img src="pictures/eye-plus-outline.png" alt="eye" class="room">
+                            <img src="pictures/source-fork.png" alt="fork" class="room">
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="itemText">
+                            <p><b>Impossible App</b></p>
+                            <p>In hac habitasse platea dictumst. Vivamus dictum trutrum arcu, a placerat velit sagittis id.</p>
+                        </div>
+                        <div class="itemPhoto">
+                            <img src="pictures/star-plus-outline.png" alt="star" class="room">
+                            <img src="pictures/eye-plus-outline.png" alt="eye" class="room">
+                            <img src="pictures/source-fork.png" alt="fork" class="room">
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="itemText">
+                            <p><b>Easy Peasy App</b></p>
+                            <p>Etiam cursus eros ac effictur fringilla. vestibulum dignissim urna eget accumsan aliquam. Curabitur dignissim nisi in tort commodo, ac bibendum magna tincidunt.</p>
+                        </div>
+                        <div class="itemPhoto">
+                            <img src="pictures/star-plus-outline.png" alt="star" class="room">
+                            <img src="pictures/eye-plus-outline.png" alt="eye" class="room">
+                            <img src="pictures/source-fork.png" alt="fork" class="room">
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="itemText">
+                            <p><b>Ad Blocker</b></p>
+                            <p>Quisque eget tutrum nisl. Nam augue justo, cursus vitae metus vel, pharetra hendrerit felis. Aliquam sed malesuada eros.</p>
+                        </div>
+                        <div class="itemPhoto">
+                            <img src="pictures/star-plus-outline.png" alt="star" class="room">
+                            <img src="pictures/eye-plus-outline.png" alt="eye" class="room">
+                            <img src="pictures/source-fork.png" alt="fork" class="room">
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="itemText">
+                            <p><b>Money Maker</b></p>
+                            <p>Praesent convallis, libero quis congue elementum, nunc ante faucibus sapien, ac scelerisque tortor purus sit amet ex. Pellentesque mollis nec sem vel aliquam.</p>
+                        </div>
+                        <div class="itemPhoto">
+                            <img src="pictures/star-plus-outline.png" alt="star" class="room">
+                            <img src="pictures/eye-plus-outline.png" alt="eye" class="room">
+                            <img src="pictures/source-fork.png" alt="fork" class="room">
+                        </div>
+                    </div>
                 </div>
             </div>
             <div class="sidebar">
                 <div class="announcements">
                     <p><b>Announcements</b></p>
                     <div class="announcementsBox">
-                        <div class="announcementsTitles">
+                        <div class="announcementsItems">
                             <p><b>Site Maintenance</b></p>
                             <p>Vestibulum condimentum tellus lacus, in accumsan elit maximus ac. Donec hendrerit sodales congue...</p>
                         </div>
-                        <div class="announcementsTitles">
+                        <hr>
+                        <div class="announcementsItems">
                             <p><b>Community Share Day</b></p>
                             <p>Nam vel lectus tincidunt, rutrum nulla eu, ornare libero. Aliquam dictum accumsan porttitor...</p>
                         </div>
-                        <div class="announcementsTitles">
+                        <hr>
+                        <div class="announcementsItems">
                             <p><b>Updated Privacy Policy</b></p>
                             <p>Phasellus effictitur nisi eget elit consectetur, eget condimentum ante auctor. Cras fingilla sagittis sem in mattis...</p>
                         </div>
@@ -50,21 +185,41 @@
                 <div class="trending">
                     <p>Trending</p>
                     <div class="trendingBox">
-                        <div class="trendingTitles">
-                            <p>@tegan</p>
-                            <p></p>
+                        <div class="trendingItems">
+                            <div>
+                                <img src="pictures/account.png" alt="account">
+                            </div>
+                            <div class="profileStuff">
+                                <p>@tegan</p>
+                                <p>World Peace Builder</p>
+                            </div>
                         </div>
-                        <div class="trendingTitles">
-                            <p>@morgan</p>
-                            <p></p>
+                        <div class="trendingItems">
+                            <div>
+                                <img src="pictures/girl.png" alt="girl">
+                            </div>
+                            <div class="profileStuff">
+                                <p>@morgan</p>
+                                <p>Super Cool Project</p>
+                            </div>
                         </div>
-                        <div class="trendingTitles">
-                            <p>@kendall</p>
-                            <p></p>
+                        <div class="trendingItems">
+                            <div>
+                                <img src="pictures/woman.png" alt="woman">
+                            </div>
+                            <div class="profileStuff">
+                                <p>@kendall</p>
+                                <p>Life Changing App</p>
+                            </div>
                         </div>
-                        <div class="trendingTitles">
-                            <p>@alex</p>
-                            <p></p>
+                        <div class="trendingItems">
+                            <div>
+                                <img src="pictures/profile.png" alt="profile">
+                            </div>
+                            <div class="profileStuff">
+                                <p>@alex</p>
+                                <p>No Traffic Maker</p>
+                            </div>
                         </div>
                     </div>
                 </div>
