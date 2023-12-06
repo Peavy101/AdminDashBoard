@@ -90,6 +90,12 @@ aside {
     padding-bottom: 60px;
 }
 
+#mainProfilePic {
+    min-width: 75px;
+    min-height: 75px;
+    max-height: 75px;
+}
+
 .topButtons {
     display: flex;
     flex-direction: row;
