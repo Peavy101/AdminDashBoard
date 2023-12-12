@@ -4,7 +4,6 @@ body {
     margin: 0;
     padding: 0;
     font-family: Roboto;
-    height: 100%;
 }
 
 aside {
@@ -13,13 +12,13 @@ aside {
     padding: 40px;
     display: flex;
     flex-direction: column;
+    max-width: 200px;
 }
 
 main {
     display: flex;
     flex-direction: column;
-    padding: 0;
-    margin: 0;
+    flex: 1;
 }
 
 .dashboardTitle {
@@ -36,7 +35,8 @@ main {
 }
 
 .dashboardTop {
-    height: 20%;
+    min-height: 20%;
+    flex: 0 0 auto;
 }
 
 .search {
@@ -126,18 +126,18 @@ main {
     display: grid;
     justify-content: center;
     align-items: center;
-    grid-template-columns: 50% 50%;
+    grid-template-columns: 45% 45%;
     grid-template-rows: 30% 30% 30%;
-    height: 100%;
-
+    row-gap: 30px;
+    margin-top: 5px;
 }
 
 .dashboardGrid > div {
     background-color: white;
     border-left: 8px solid orange;
     border-radius: 10px;
-    width: 80%;
-    height: 75%;
+    width: 90%;
+    height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -193,3 +193,19 @@ main {
     padding-left: 25px;
 }
 
+@media screen and (max-width:1200px) {
+    .dashboardGrid {
+        display: grid;
+        justify-content: left;
+        align-items: left;
+        grid-template-columns: 45%;
+        grid-template-rows: 15% 15% 15% 15% 15% 15%;
+        row-gap: 30px;
+        margin-top: 5px;
+        margin-left: 15px;
+    }
+
+    .projects {
+        max-width: 700px;
+    }
+}
