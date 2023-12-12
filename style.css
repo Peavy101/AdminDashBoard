@@ -4,27 +4,22 @@ body {
     margin: 0;
     padding: 0;
     font-family: Roboto;
+    height: 100%;
 }
 
 aside {
     background-color: #1992D4;
-    height: 100vh;
-    flex-basis: 20%;
+    flex: 1;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
 }
 
 main {
-    flex-basis: 80%;
     display: flex;
     flex-direction: column;
-}
-
-aside {
-    padding: 40px;
-}
-
-.asideMain {
-    display: flex;
-    flex-direction: column;
+    padding: 0;
+    margin: 0;
 }
 
 .dashboardTitle {
@@ -130,20 +125,23 @@ aside {
 .dashboardGrid {
     display: grid;
     justify-content: center;
+    align-items: center;
     grid-template-columns: 50% 50%;
     grid-template-rows: 30% 30% 30%;
     height: 100%;
-    gap: 5%;
-    padding: 5%;
+
 }
 
 .dashboardGrid > div {
     background-color: white;
     border-left: 8px solid orange;
     border-radius: 10px;
+    width: 80%;
+    height: 75%;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
 }
 
 .itemPhoto {
@@ -160,9 +158,13 @@ aside {
 
 .sidebar {
     flex-basis: 25%;
-    padding: 10px;
 }
 
+.announcements {
+    display: flex;
+    flex-direction: column;
+
+}
 .announcementsBox {
     background-color: white;
     border-radius: 10px;
